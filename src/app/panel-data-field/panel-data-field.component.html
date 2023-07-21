@@ -1,0 +1,32 @@
+<div class="panel-data">
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Panel Name</th>
+          <th>Mac ID</th>
+          <th>Lat</th>
+          <th>Long</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of panelData">
+          <td (click)="showPanelDetails(item)" style="cursor: pointer;">{{ item.panel_name }}</td>
+          <td>{{ item.mac_id }}</td>
+          <td>{{ item.Lat }}</td>
+          <td>{{ item.Lng }}</td>
+          <td (click)="showMapSidebar(item)" style="cursor: pointer;">Location_Icon</td>
+        </tr>
+      </tbody>
+    </table>
+    <app-panel-details
+      [panelData]="selectedPanelData"
+      *ngIf="showDetailsSidebar"
+    ></app-panel-details>
+  </div>
+  <div class="panel-map-container">
+    <h1 style="text-align: center;">Map</h1>
+    <app-panel-map [panelData]="selectedPanelData" *ngIf="showMapSidebars"  class="panel-map"></app-panel-map>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+/* Add styles to make the table attractive */
+.panel-details{
+    margin-top: 20px;
+}
+.panel-details > h3{
+    margin: 20px;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    margin-left: 20px;
+  }
+  
+  thead {
+    background-color: #80a0f7;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  
+  td:hover {
+    background-color: #f5f5f5;
+  }
+  

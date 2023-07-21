@@ -1,0 +1,8 @@
+.panelInfo >h1{
+    text-align: center;
+    color:gray;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}

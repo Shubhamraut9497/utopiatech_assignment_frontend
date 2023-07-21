@@ -1,0 +1,47 @@
+/* Add styles to make the table attractive */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    margin-left: 20px;
+  }
+  
+  thead {
+    background-color: #80a0f7;
+  }
+  
+  thead:hover {
+    background-color: #80a0f7 !important;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  
+  .panel-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  /* Add styles for the map container */
+  .panel-map-container {
+    flex: 1; /* Take the remaining width */
+    height: 400px;
+    margin-left: 20px;
+    border: 2px solid #ccc;
+    position: relative;
+    
+  }
+  .panel-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
